@@ -1,14 +1,16 @@
 # Notes - Gist - Pens - Repos
 
 ### My website : 
-(link)[https://haikel-fazzani.netlify.com/]
+[link](https://haikel-fazzani.netlify.com)
 
 ### algorithms pratice
-- (Link)[https://gitlab.com/haikelfazzani/code-challenges]
+- [link](https://gitlab.com/haikelfazzani/code-challenges)
 
 ### techniques && approaches
 
 ### fontend
-- (MutationObserver)[https://codepen.io/haikelfazzani-the-bold/pen/LYEJyqw]
+- [MutationObserver](https://codepen.io/haikelfazzani-the-bold/pen/LYEJyqw)
 
-### backend
+### Learn more
+- Learn more about gRPC
+- Learn more about PWA
