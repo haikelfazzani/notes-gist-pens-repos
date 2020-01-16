@@ -12,9 +12,9 @@ function nearWord(words, source) {
     var max = 1;
     var result = '';
     words.forEach(function (target) {
-        var maxLen = fuzzyMatch(source, target);
-        if (maxLen >= max) {
-            max = maxLen;
+        var nmaxLettersMatch = fuzzyMatch(source, target);
+        if (nmaxLettersMatch >= max) {
+            max = nmaxLettersMatch;
             result = target;
         }
     });

@@ -14,9 +14,9 @@ function nearWord(words: string[], source: string) {
   let max: number = 1;
   let result: string = '';
   words.forEach(target => {
-    let maxLen: number = fuzzyMatch(source, target);
-    if (maxLen >= max) {
-      max = maxLen;
+    let nmaxLettersMatch: number = fuzzyMatch(source, target);
+    if (nmaxLettersMatch >= max) {
+      max = nmaxLettersMatch;
       result = target;
     }
   });
