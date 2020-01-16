@@ -1,6 +1,7 @@
 # Notes - Gist - Pens - Repos
 
-### My website : (link)[https://haikel-fazzani.netlify.com/]
+### My website : 
+(link)[https://haikel-fazzani.netlify.com/]
 
 ### algorithms pratice
 - (Link)[https://gitlab.com/haikelfazzani/code-challenges]
