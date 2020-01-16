@@ -1,9 +1,9 @@
 # Notes - Gist - Pens - Repos
 
 ### My website : 
-[link](https://haikel-fazzani.netlify.com)
+- [link](https://haikel-fazzani.netlify.com)
 
-### algorithms pratice
+### algorithms practice
 - [link](https://gitlab.com/haikelfazzani/code-challenges)
 
 ### techniques && approaches
@@ -22,3 +22,10 @@
 ### Learn more
 - Learn more about gRPC
 - Learn more about PWA
+
+### Packages
+- [Link](https://github.com/wutility)
+
+### Browser extensions
+- [Link](https://github.com/haikelfazzani/chrome-extensions)
+- [Link](https://github.com/Chromo-lib)
