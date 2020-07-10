@@ -11,6 +11,9 @@ function App () {
       .then(r => {
         setImages(r.h);
       })
+      .catch(e=>{
+        console.log(e);
+      })
 
   }, []);
 
