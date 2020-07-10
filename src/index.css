@@ -1,1 +1,50 @@
+:root {
+  --light-box-shadow: 0 15px 45px rgba(16, 30, 54, 0.15);
+}
 
+body {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.card {
+  border: 0;
+  box-shadow: var(--light-box-shadow);
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.card:hover {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  transform: scale(.9, .9);
+}
+
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/********************************/
+
+.fs-40 {font-size:40px;}
+
+a {text-decoration: none;}
+
+/************ Scroll **************/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-light);
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "c",
+    "filename": "c.svg"
+  },
+  {
+    "name": "clojure",
+    "filename": "clojure.svg"
+  },
+  {
+    "name": "cpp",
+    "filename": "cpp.svg"
+  },
+  {
+    "name": "elixir",
+    "filename": "elixir.svg"
+  },
+  {
+    "name": "go",
+    "filename": "go.svg"
+  },
+  {
+    "name": "java",
+    "filename": "java.svg"
+  },
+  {
+    "name": "javascript",
+    "filename": "javascript.svg"
+  },
+  {
+    "name": "lua",
+    "filename": "lua.svg"
+  },
+  {
+    "name": "ocaml",
+    "filename": "ocaml.svg"
+  },
+  {
+    "name": "perl",
+    "filename": "perl.svg"
+  },
+  {
+    "name": "php",
+    "filename": "php.svg"
+  },
+  {
+    "name": "python",
+    "filename": "python.svg"
+  },
+  {
+    "name": "ruby",
+    "filename": "ruby.svg"
+  },
+  {
+    "name": "rust",
+    "filename": "rust.svg"
+  },
+  {
+    "name": "swift",
+    "filename": "swift.svg"
+  },
+  {
+    "name": "typescript",
+    "filename": "typescript.svg"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "jquery",
+    "filename": "jquery.svg"
+  },
+  {
+    "name": "nodejs",
+    "filename": "nodejs.svg"
+  },
+  {
+    "name": "redux",
+    "filename": "redux.svg"
+  },
+  {
+    "name": "sass",
+    "filename": "sass.svg"
+  },
+  {
+    "name": "vscode",
+    "filename": "vscode.svg"
+  },
+  {
+    "name": "vue",
+    "filename": "vue.svg"
+  }
+]
