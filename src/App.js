@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 
-function App() {
+function App () {
+
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + '/icons/data.json')
+      .then(r => r.json())
+      .then(r => {
+        setImages(r.h);
+      })
+
+  }, []);
+
   return (
     <div className="App">
-
+      {images && <img src={process.env.PUBLIC_URL + '/icons/' + images} all={images} />}
     </div>
   );
 }
