@@ -19,7 +19,7 @@ function App () {
 
   return (
     <div className="App">
-      {images && <img src={process.env.PUBLIC_URL + '/icons/' + images} all={images} />}
+      {images && <img src={process.env.PUBLIC_URL + '/icons/' + images} alt={images} />}
     </div>
   );
 }
