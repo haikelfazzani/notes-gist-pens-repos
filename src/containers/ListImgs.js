@@ -37,7 +37,7 @@ export default function ListImgs ({ images, baseUrl }) {
             className="card-img-top mb-2"
           />
 
-          <span className="mb-2">{img.name}</span>
+          <span className="mb-2 fs-14 font-weight-bolder">{img.name}</span>
 
           <div className="w-100 btn-group" role="group" aria-label="Basic example">
             <button className={"btn btn-light " + (currClickedIcon === i && isCopied ? "bg-dark text-white" : "text-muted")}

@@ -4,6 +4,10 @@
     "filename": "atom.svg"
   },
   {
+    "name": "brackets",
+    "filename": "brackets.svg"
+  },
+  {
     "name": "vscode",
     "filename": "vscode.svg"
   }

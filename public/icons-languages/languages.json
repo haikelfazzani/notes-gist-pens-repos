@@ -16,6 +16,10 @@
     "filename": "elixir.svg"
   },
   {
+    "name": "elm",
+    "filename": "elm.svg"
+  },
+  {
     "name": "go",
     "filename": "go.svg"
   },
