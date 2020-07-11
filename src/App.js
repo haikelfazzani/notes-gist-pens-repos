@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
+import Drawer from "./components/Drawer";
 
 export default function App () {
 
@@ -18,6 +19,8 @@ export default function App () {
         
         <Redirect from="*" to="/" />
       </Switch>
+
+      <Drawer />
 
       <Footer />
 

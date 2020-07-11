@@ -13,7 +13,7 @@ export default function Drawer () {
 
   const onDownload = () => {
     if (globalState.listSelectedIcons.length > 0) {
-      globalState.listSelectedIcons.map(img => {
+      globalState.listSelectedIcons.forEach(img => {
         fetch(img.url)
           .then(r => r.text())
           .then(response => {

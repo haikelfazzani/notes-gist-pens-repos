@@ -17,14 +17,16 @@ body {
 }
 
 .navbar {
+  font-family: 'Do Hyeon', sans-serif;
   font-size: 14px;
   font-weight: 600;
+  /* box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12); */
 }
 
 header {
-  background:url(https://clickup.com/landing/images/join-companies/bg__with-dotted.svg)repeat center/auto,linear-gradient(270deg,#9f8fff 0,#7b68ee 100%);
+  background:#0d6efd;
   color:#fff;
-  padding:20px 30px 30px;
+  padding:40px;
   box-shadow:var(--box-shad-light);
 }
 
