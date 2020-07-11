@@ -46,11 +46,13 @@ function Home () {
 
   return (<div>
 
-    <header>
+    <header className="pb-0">
       <h1>svg icons for</h1>
       <h1>frameworks and languages</h1>
-      <p className="mt-0">Free and open source</p>
+      <p className="m-0">Free and open source</p>
+    </header>
 
+    <header className="sticky-top pt-0 pt-3">
       <form className="w-25 d-flex mx-auto" onSubmit={onSearchIcon}>
         <input
           type="search"
@@ -65,7 +67,7 @@ function Home () {
       </form>
     </header>
 
-    <div className="container py-5">      
+    <div className="container py-5">
 
       <section className="py-5">
         <h3 className="text-muted mb-3">Frameworks</h3>

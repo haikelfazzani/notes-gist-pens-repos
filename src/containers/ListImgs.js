@@ -6,6 +6,8 @@ import { GlobalContext } from '../state/GlobalState';
 export default function ListImgs ({ images, baseUrl }) {
 
   const { globalState, setGlobalState } = useContext(GlobalContext);
+
+  const [currClickedIcon, setCurrClickedIcon] = useState(-1);
   const [isCopied, setIsCopied] = useState(false);
 
   const onAddToPanel = (imgFilename) => {
@@ -16,14 +18,18 @@ export default function ListImgs ({ images, baseUrl }) {
     }
   }
 
-  const onCopy = (imgFilename) => {
-    copyToClipboard(baseUrl + imgFilename);
-    //setIsCopied(true);
+  const onCopy = (iconFileName, iconIndex) => {
+    setIsCopied(true);
+    
+    copyToClipboard(baseUrl + iconFileName);
+    setCurrClickedIcon(iconIndex)    
+
+    setTimeout(() => { setIsCopied(false); }, 1000);
   }
 
   return (
     <div className="row">
-      {images && images.map(img => <div className="col-md-2 mb-3" key={img.name}>
+      {images && images.map((img, i) => <div className="col-md-2 mb-3" key={img.name}>
         <div className="card h-100">
           <img
             src={baseUrl + img.filename}
@@ -34,11 +40,13 @@ export default function ListImgs ({ images, baseUrl }) {
           <span className="text-muted mb-2">{img.name}</span>
 
           <div className="w-100 btn-group" role="group" aria-label="Basic example">
-            <button className="btn btn-light text-muted" onClick={() => { onCopy(img.filename); }}>
-              <i className={"fa fa-copy " + (isCopied ? "text-success" : "")}></i>
+            <button className={"btn btn-light " + (currClickedIcon === i && isCopied ? "bg-dark text-white" : "")}
+              onClick={() => { onCopy(img.filename, i); }}>
+              <i className={"fa fa-" + (currClickedIcon === i && isCopied ? "clipboard" : "copy")}></i>
             </button>
 
-            <button className="btn btn-light text-muted" onClick={() => { onAddToPanel(img.filename); }}>
+            <button className="btn btn-light"
+              onClick={() => { onAddToPanel(img.filename); }}>
               <i className="fa fa-plus"></i>
             </button>
 

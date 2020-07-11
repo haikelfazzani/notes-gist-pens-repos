@@ -22,7 +22,7 @@ export default function Navbar () {
 
       <div className="container">
         <Link to="/" className="navbar-brand d-flex align-items-center">
-          <img src={logo} width="30" height="30" alt="" loading="lazy" className="rounded-circle mr-2" />
+          <img src={logo} width="25" height="25" alt="incofy" loading="lazy" className="rounded-circle mr-2" />
           <span className="fs-12">Incofy</span>
         </Link>
 

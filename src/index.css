@@ -24,7 +24,7 @@ body {
 header {
   background:url(https://clickup.com/landing/images/join-companies/bg__with-dotted.svg)repeat center/auto,linear-gradient(270deg,#9f8fff 0,#7b68ee 100%);
   color:#fff;
-  padding:40px;
+  padding:20px 30px 30px;
   box-shadow:var(--box-shad-light);
 }
 
@@ -99,4 +99,8 @@ a {text-decoration: none;}
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--bs-light);
+}
+
+@media screen and (max-width: 992px) {
+  .w-25 {width: 100% !important;}
 }
