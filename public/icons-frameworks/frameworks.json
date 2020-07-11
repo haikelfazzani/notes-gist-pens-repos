@@ -1,11 +1,87 @@
 [
   {
+    "name": "angular",
+    "filename": "angular.svg"
+  },
+  {
+    "name": "apollo",
+    "filename": "apollo.svg"
+  },
+  {
+    "name": "backbone",
+    "filename": "backbone.svg"
+  },
+  {
+    "name": "bootstrap",
+    "filename": "bootstrap.svg"
+  },
+  {
+    "name": "bulma",
+    "filename": "bulma.svg"
+  },
+  {
+    "name": "chai",
+    "filename": "chai.svg"
+  },
+  {
+    "name": "electron",
+    "filename": "electron.svg"
+  },
+  {
+    "name": "ember",
+    "filename": "ember.svg"
+  },
+  {
     "name": "jquery",
     "filename": "jquery.svg"
   },
   {
+    "name": "express",
+    "filename": "express.svg"
+  },
+  {
+    "name": "gatsby",
+    "filename": "gatsby.svg"
+  },
+  {
+    "name": "jest",
+    "filename": "jest.svg"
+  },
+  {
+    "name": "less",
+    "filename": "less.svg"
+  },
+  {
+    "name": "material-ui",
+    "filename": "material-ui.svg"
+  },
+  {
+    "name": "meteor",
+    "filename": "meteor.svg"
+  },
+  {
+    "name": "mocha",
+    "filename": "mocha.svg"
+  },
+  {
+    "name": "nativescript",
+    "filename": "nativescript.svg"
+  },
+  {
     "name": "nodejs",
     "filename": "nodejs.svg"
+  },
+  {
+    "name": "polymer",
+    "filename": "polymer.svg"
+  },
+  {
+    "name": "preact",
+    "filename": "preact.svg"
+  },
+  {
+    "name": "react",
+    "filename": "react.svg"
   },
   {
     "name": "redux",
@@ -16,8 +92,16 @@
     "filename": "sass.svg"
   },
   {
-    "name": "vscode",
-    "filename": "vscode.svg"
+    "name": "storybook",
+    "filename": "storybook.svg"
+  },
+  {
+    "name": "svelte",
+    "filename": "svelte.svg"
+  },
+  {
+    "name": "tailwind",
+    "filename": "tailwind.svg"
   },
   {
     "name": "vue",

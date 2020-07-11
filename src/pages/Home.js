@@ -4,10 +4,12 @@ import ListImgs from '../containers/ListImgs';
 
 const F_BASE_URL = window.location.origin + '/icons-frameworks/';
 const L_BASE_URL = window.location.origin + '/icons-languages/';
+const T_BASE_URL = window.location.origin + '/icons-tools/';
 
 const tabs = [
   { name: 'frameworks', baseUrl: F_BASE_URL },
-  { name: 'languages', baseUrl: L_BASE_URL }
+  { name: 'languages', baseUrl: L_BASE_URL },
+  { name: 'tools', baseUrl: T_BASE_URL }
 ];
 
 function Home () {
