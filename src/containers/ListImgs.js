@@ -30,22 +30,22 @@ export default function ListImgs ({ images, baseUrl }) {
   return (
     <div className="row">
       {images && images.map((img, i) => <div className="col-md-2 mb-3" key={img.name}>
-        <div className="card h-100">
+        <div className="card h-100 text-muted">
           <img
             src={baseUrl + img.filename}
             alt={img.name}
             className="card-img-top mb-2"
           />
 
-          <span className="text-muted mb-2">{img.name}</span>
+          <span className="mb-2">{img.name}</span>
 
           <div className="w-100 btn-group" role="group" aria-label="Basic example">
-            <button className={"btn btn-light " + (currClickedIcon === i && isCopied ? "bg-dark text-white" : "")}
+            <button className={"btn btn-light " + (currClickedIcon === i && isCopied ? "bg-dark text-white" : "text-muted")}
               onClick={() => { onCopy(img.filename, i); }}>
               <i className={"fa fa-" + (currClickedIcon === i && isCopied ? "clipboard" : "copy")}></i>
             </button>
 
-            <button className="btn btn-light"
+            <button className="btn btn-light text-muted"
               onClick={() => { onAddToPanel(img.filename); }}>
               <i className="fa fa-plus"></i>
             </button>
