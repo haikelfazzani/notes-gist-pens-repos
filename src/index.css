@@ -1,19 +1,41 @@
 :root {
   --light-box-shadow: 0 15px 45px rgba(16, 30, 54, 0.15);
+  --box-shad-light:0 15px 45px rgba(191, 191, 191, 0.4);
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
 }
+
+
+.main {
+  width:100%;
+  height: 100%;
+}
+
+.navbar {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header {
+  background:url(https://clickup.com/landing/images/join-companies/bg__with-dotted.svg)repeat center/auto,linear-gradient(270deg,#9f8fff 0,#7b68ee 100%);
+  color:#fff;
+  padding:40px;
+  box-shadow:var(--box-shad-light);
+}
+
+/******************************/
 
 .card {
   border: 0;
   box-shadow: var(--light-box-shadow);
   padding: 10px 0 0 0;
   cursor: pointer;
-  transition: all .25s;
+  transition: background-color .25s, transform .25s;
 }
 
 .card:hover {
@@ -22,17 +44,47 @@ body {
   transform: scale(.9, .9);
 }
 
-
 .card img {
   width: 50px;
   height: 50px;
   margin: auto;
 }
 
+/***********************************/
+.drawer {
+  height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    transform: translateX(250px);
+    transition: .2s linear all;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.drawer-close-btn,.drawer-rm-btn {
+  color: var(--bs-gray);
+  cursor: pointer;
+}
+
+.drawer-close-btn:hover,.drawer-rm-btn:hover {
+  color: var(--bs-dark)
+}
+
+.drawer-footer {
+  width:100%;
+  position:absolute;
+  bottom: 0;
+  right:0;
+}
 /********************************/
 
 .fs-40 {font-size:40px;}
-
+.fs-14 {font-size:14px !important;}
+.fs-12 {font-size:12px !important;}
+.fs-10 {font-size:10px !important;}
 a {text-decoration: none;}
 
 /************ Scroll **************/

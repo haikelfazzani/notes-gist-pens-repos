@@ -1,18 +1,19 @@
-import React from 'react';
-import { useState } from 'react';
-import download from './utils/download';
-import copyToClipboard from './utils/copyToClipboard';
+import React, { useContext, useState } from 'react';
+
+import copyToClipboard from '../utils/copyToClipboard';
+import { GlobalContext } from '../state/GlobalState';
 
 export default function ListImgs ({ images, baseUrl }) {
 
+  const { globalState, setGlobalState } = useContext(GlobalContext);
   const [isCopied, setIsCopied] = useState(false);
 
-  const onDownload = (imgFilename) => {
-    fetch(baseUrl + imgFilename)
-      .then(r => r.text())
-      .then(response => {
-        download(response, imgFilename);
-      });
+  const onAddToPanel = (imgFilename) => {
+    let panel = globalState.listSelectedIcons.slice(0);
+    if (!panel.some(p => p.filename.startsWith(imgFilename))) {
+      panel.push({ filename: imgFilename, url: baseUrl + imgFilename });
+      setGlobalState({ ...globalState, listSelectedIcons: panel, isDrawerOpen: true });
+    }
   }
 
   const onCopy = (imgFilename) => {
@@ -33,12 +34,12 @@ export default function ListImgs ({ images, baseUrl }) {
           <span className="text-muted mb-2">{img.name}</span>
 
           <div className="w-100 btn-group" role="group" aria-label="Basic example">
-            <button className="btn btn-light" onClick={() => { onCopy(img.filename); }}>
+            <button className="btn btn-light text-muted" onClick={() => { onCopy(img.filename); }}>
               <i className={"fa fa-copy " + (isCopied ? "text-success" : "")}></i>
             </button>
 
-            <button className="btn btn-light" onClick={() => { onDownload(img.filename); }}>
-              <i className="fa fa-download text-muted"></i>
+            <button className="btn btn-light text-muted" onClick={() => { onAddToPanel(img.filename); }}>
+              <i className="fa fa-plus"></i>
             </button>
 
           </div>
