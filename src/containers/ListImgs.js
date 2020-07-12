@@ -1,30 +1,22 @@
-import React, { useContext, useState } from 'react';
-
-import copyToClipboard from '../utils/copyToClipboard';
+import React, { useContext } from 'react';
 import { GlobalContext } from '../state/GlobalState';
+import { Link } from 'react-router-dom';
 
-export default function ListImgs ({ images, baseUrl }) {
+export default function ListImgs ({ images, baseUrl, folder }) {
 
   const { globalState, setGlobalState } = useContext(GlobalContext);
-
-  const [currClickedIcon, setCurrClickedIcon] = useState(-1);
-  const [isCopied, setIsCopied] = useState(false);
 
   const onAddToPanel = (imgFilename) => {
     let panel = globalState.listSelectedIcons.slice(0);
     if (!panel.some(p => p.filename.startsWith(imgFilename))) {
       panel.push({ filename: imgFilename, url: baseUrl + imgFilename });
-      setGlobalState({ ...globalState, listSelectedIcons: panel, isDrawerOpen: true });
+      setGlobalState({
+        ...globalState,
+        listSelectedIcons: panel,
+        currFolderIcons: folder,
+        isDrawerOpen: true
+      });
     }
-  }
-
-  const onCopy = (iconFileName, iconIndex) => {
-    setIsCopied(true);
-    
-    copyToClipboard(baseUrl + iconFileName);
-    setCurrClickedIcon(iconIndex)    
-
-    setTimeout(() => { setIsCopied(false); }, 1000);
   }
 
   return (
@@ -40,10 +32,10 @@ export default function ListImgs ({ images, baseUrl }) {
           <span className="mb-2 fs-14 font-weight-bolder">{img.name}</span>
 
           <div className="w-100 btn-group" role="group" aria-label="Basic example">
-            <button className={"btn btn-light " + (currClickedIcon === i && isCopied ? "bg-dark text-white" : "text-muted")}
-              onClick={() => { onCopy(img.filename, i); }}>
-              <i className={"fa fa-" + (currClickedIcon === i && isCopied ? "clipboard" : "copy")}></i>
-            </button>
+
+            <Link className="btn btn-light text-muted" to={'/editor/' + folder + '/' + img.filename}>
+              <i className="fa fa-cogs"></i>
+            </Link>
 
             <button className="btn btn-light text-muted"
               onClick={() => { onAddToPanel(img.filename); }}>
@@ -52,7 +44,10 @@ export default function ListImgs ({ images, baseUrl }) {
 
           </div>
         </div>
+
+
       </div>)}
+
     </div>
   );
 }

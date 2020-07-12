@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Drawer from "./components/Drawer";
+import Editor from "./pages/Editor";
 
 export default function App () {
 
@@ -16,6 +17,9 @@ export default function App () {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route exact path="/editor" component={Editor} />
+
+        <Route path="/editor/:folder/:filename" component={Editor} />
         
         <Redirect from="*" to="/" />
       </Switch>

@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../state/GlobalState';
 
 import download from '../utils/download';
+import { Link } from 'react-router-dom';
 
 export default function Drawer () {
 
@@ -33,10 +34,6 @@ export default function Drawer () {
     document.querySelector('.main').style.width = globalState.isDrawerOpen
       ? 'calc(100% - 250px)'
       : '100%';
-
-    document.body.style.overflow = globalState.isDrawerOpen
-      ? 'hidden'
-      : 'auto';
   }, [globalState.isDrawerOpen]);
 
   return (<div className="drawer bg-light border-left"
@@ -48,16 +45,22 @@ export default function Drawer () {
     </div>
 
 
-    <ul class="list-unstyled pl-2 pr-2">
+    <ul className="list-unstyled pl-2 pr-2">
       {globalState.listSelectedIcons.length > 0
         && globalState.listSelectedIcons.map(icon =>
-          <li class="media d-flex text-left bg-white mb-3 pl-2 pr-2 py-2 border">
-            <img src={icon.url} class="mr-2" alt={icon.filename} style={{ width: '35px', height: '35px' }} />
-            <div class="media-body">
-              <h5 class="fs-14 m-0">{icon.filename}</h5>
-              <span className="drawer-rm-btn fs-10" onClick={() => { onRemoveIcon(icon.filename) }}>
+          <li className="media d-flex text-left bg-white mb-3 pl-2 pr-2 py-2 border" key={icon.filename}>
+            <img src={icon.url} className="mr-2" alt={icon.filename} style={{ width: '35px', height: '35px' }} />
+            <div className="w-100 media-body d-flex flex-column">
+
+              <Link className="w-100 fs-14 m-0" to={'/editor/' + globalState.currFolderIcons + '/' + icon.filename}>
+                {icon.filename}
+              </Link>
+
+              <span className="w-100 drawer-rm-btn fs-10" 
+              onClick={() => { onRemoveIcon(icon.filename) }}>
                 <i className="fa fa-times"></i> remove
               </span>
+
             </div>
           </li>)}
     </ul>

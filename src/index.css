@@ -30,6 +30,11 @@ header {
   box-shadow:var(--box-shad-light);
 }
 
+
+/*****************************/
+.editor{
+  text-transform: none !important;
+}
 /******************************/
 
 .card {

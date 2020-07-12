@@ -7,9 +7,9 @@ const L_BASE_URL = window.location.origin + '/icons-languages/';
 const T_BASE_URL = window.location.origin + '/icons-tools/';
 
 const tabs = [
-  { name: 'frameworks', baseUrl: F_BASE_URL },
-  { name: 'languages', baseUrl: L_BASE_URL },
-  { name: 'tools', baseUrl: T_BASE_URL }
+  { name: 'frameworks', baseUrl: F_BASE_URL, folder: 'icons-frameworks' },
+  { name: 'languages', baseUrl: L_BASE_URL, folder: 'icons-languages' },
+  { name: 'tools', baseUrl: T_BASE_URL, folder: 'icons-tools' }
 ];
 
 function Home () {
@@ -62,11 +62,9 @@ function Home () {
 
     <div className="container py-5">
 
-
-
-      <ul class="nav nav-tabs mb-4">
-        {tabs.map(tab => <li class="nav-item" key={tab.name}>
-          <span class={"nav-link " + (currImageObj.name === tab.name ? "active" : "")}
+      <ul className="nav nav-tabs mb-4">
+        {tabs.map(tab => <li className="nav-item" key={tab.name}>
+          <span className={"nav-link " + (currImageObj.name === tab.name ? "active" : "")}
             onClick={() => { onTab(tab) }}>{tab.name}</span>
         </li>)}
       </ul>
@@ -74,6 +72,7 @@ function Home () {
       <ListImgs
         baseUrl={currImageObj.baseUrl}
         images={images}
+        folder={currImageObj.folder}
       />
 
     </div>

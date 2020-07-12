@@ -4,7 +4,8 @@ const GlobalContext = createContext();
 
 const initState = {
   listSelectedIcons: [],
-  isDrawerOpen: false
+  isDrawerOpen: false,
+  currFolderIcons: 'icons-frameworks'
 }
 
 function GlobalProvider (props) {

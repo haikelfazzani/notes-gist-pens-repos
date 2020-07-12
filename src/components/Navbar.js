@@ -36,6 +36,12 @@ export default function Navbar () {
           <ul className="navbar-nav">
 
             <li className="nav-item">
+              <Link className="nav-link" to="/editor">
+                <i className="fa fa-cogs"></i> editor
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link className="nav-link" to="/about">
                 <i className="fa fa-info-circle"></i> About
               </Link>
