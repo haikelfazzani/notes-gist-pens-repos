@@ -8,6 +8,14 @@
     "filename": "apollo.svg"
   },
   {
+    "name": "autoprefixer",
+    "filename": "autoprefixer.svg"
+  },
+  {
+    "name": "ava",
+    "filename": "ava.svg"
+  },
+  {
     "name": "backbone",
     "filename": "backbone.svg"
   },
@@ -40,8 +48,24 @@
     "filename": "express.svg"
   },
   {
+    "name": "fastify",
+    "filename": "fastify.svg"
+  },
+  {
+    "name": "feathers",
+    "filename": "feathers.svg"
+  },
+  {
     "name": "gatsby",
     "filename": "gatsby.svg"
+  },
+  {
+    "name": "gulp",
+    "filename": "gulp.svg"
+  },
+  {
+    "name": "hapi",
+    "filename": "hapi.svg"
   },
   {
     "name": "jest",
@@ -68,8 +92,16 @@
     "filename": "nativescript.svg"
   },
   {
+    "name": "nest",
+    "filename": "nest.svg"
+  },
+  {
     "name": "nodejs",
     "filename": "nodejs.svg"
+  },
+  {
+    "name": "nodemon",
+    "filename": "nodemon.svg"
   },
   {
     "name": "polymer",
