@@ -13,7 +13,7 @@ FREE AND OPEN SOURCE SVG ICONS FOR FRAMEWORKS AND LANGUAGES
 - All pull requests are welcome, feel free.
 
 ### Capture
-![](https://i.ibb.co/SPWBHVp/incofy.png)
+![](https://i.ibb.co/ZHbydHm/incofy.png)
 
 ### Built with
 - React/React Router

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ListImgs from '../containers/ListImgs';
 
+import headImg from '../img/2.svg';
+
 const F_BASE_URL = window.location.origin + '/icons-frameworks/';
 const L_BASE_URL = window.location.origin + '/icons-languages/';
 const T_BASE_URL = window.location.origin + '/icons-tools/';
@@ -46,18 +48,28 @@ function Home () {
 
   return (<div>
 
-    <header>
-      <h1>svg icons for</h1>
-      <h1>frameworks and languages</h1>
-      <p className="mt-0">Free and open source</p>
+    <header className="bg-dark text-left">
+      <div className="container">
+        <div className="d-flex align-items-center">
+        <div className="w-75">
+          <h1><i className="fa fa-info-circle"></i> svg icons for</h1>
+          <h1>frameworks and languages</h1>
+          <p className="mt-0">Free and open source</p>
 
-      <form className="w-25 d-flex mx-auto" onSubmit={onSearchIcon}>
-        <input
-          type="search"
-          className="form-control rounded-0 border-0"
-          placeholder="react.."
-        />
-      </form>
+          <form onSubmit={onSearchIcon} className="d-flex w-50">
+            <input
+              type="search"
+              className="form-control mr-3"
+              placeholder="react.."
+            />
+
+            <button type="submit" className="btn btn-primary"><i className="fa fa-search"></i></button>
+          </form>
+        </div>
+
+        <img src={headImg} alt="incofy" className="w-25" />
+        </div>
+      </div>
     </header>
 
     <div className="container py-5">

@@ -17,17 +17,15 @@ body {
 }
 
 .navbar {
-  font-family: 'Do Hyeon', sans-serif;
-  font-size: 14px;  
+  font-size: 14px; 
+  font-weight: 700; 
   }
-
-.navbar-brand {font-weight: 600;}
 
 header {
   color:#fff;
   padding:40px;
-  background: linear-gradient(270deg,#9f8fff,#7b68ee);
-  box-shadow: 0px 5px 20px rgba(123,104,238,.6);
+  /* background: url(img/2.svg),linear-gradient(270deg,#474649,#7b68ee); */
+  box-shadow: 0px 5px 20px rgba(80, 79, 85, 0.6);
 }
 
 
@@ -78,6 +76,7 @@ header {
     transition: .2s linear all;
     overflow: auto;
     overflow-x: hidden;
+    background-image: url(img/1.svg);
 }
 
 .drawer-close-btn,.drawer-rm-btn {
@@ -97,8 +96,9 @@ header {
 }
 /********************************/
 
-.btn-primary,.btn-dark {
-  box-shadow: 0 10px 25px rgba(209, 209, 209, 0.801);
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  transition: background-color .25s;
 }
 
 .fs-40 {font-size:40px;}

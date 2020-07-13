@@ -18,7 +18,7 @@ export default function Navbar () {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <div className="container">
         <Link to="/" className="navbar-brand d-flex align-items-center">
