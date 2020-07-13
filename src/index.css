@@ -18,22 +18,31 @@ body {
 
 .navbar {
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  /* box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12); */
-}
+  font-size: 14px;  
+  }
+
+.navbar-brand {font-weight: 600;}
 
 header {
-  background:#0d6efd;
   color:#fff;
   padding:40px;
-  box-shadow:var(--box-shad-light);
+  background: linear-gradient(270deg,#9f8fff,#7b68ee);
+  box-shadow: 0px 5px 20px rgba(123,104,238,.6);
 }
 
 
 /*****************************/
 .editor{
   text-transform: none !important;
+}
+
+#svg-editor {resize: vertical;}
+
+.svg-display {
+  width:100%;
+  min-height: 256px;
+  background-image: url(img/dots.svg);
+  padding:20px;
 }
 /******************************/
 
@@ -87,6 +96,10 @@ header {
   right:0;
 }
 /********************************/
+
+.btn-primary,.btn-dark {
+  box-shadow: 0 10px 25px rgba(209, 209, 209, 0.801);
+}
 
 .fs-40 {font-size:40px;}
 .fs-14 {font-size:14px !important;}

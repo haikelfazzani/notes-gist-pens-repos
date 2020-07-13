@@ -31,13 +31,10 @@ export default function Navbar () {
         </button>
 
         <div className="collapse navbar-collapse" style={{ display: navToggle ? 'block' : 'none' }}>
-          <ul className="navbar-nav mr-auto"></ul>
-
-          <ul className="navbar-nav">
-
+          <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/editor">
-                <i className="fa fa-cogs"></i> editor
+              <Link className="nav-link" to="/">
+                <i className="fa fa-home"></i> home
               </Link>
             </li>
 
@@ -46,9 +43,16 @@ export default function Navbar () {
                 <i className="fa fa-info-circle"></i> About
               </Link>
             </li>
+          </ul>
+
+          <ul className="navbar-nav">
 
             <li className="nav-item">
-              <span className="nav-link" onClick={onOpenDrawer}>
+              <Link className="btn btn-light mr-3" to="/editor"><i className="fa fa-cog"></i></Link>
+            </li>
+
+            <li className="nav-item">
+              <span className="btn btn-light" onClick={onOpenDrawer}>
                 <i className="fas fa-cart-arrow-down"></i> ({globalState.listSelectedIcons.length})
               </span>
             </li>

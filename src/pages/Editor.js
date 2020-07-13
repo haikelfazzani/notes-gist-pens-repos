@@ -68,9 +68,9 @@ export default function Editor () {
 
   return (<div className="editor container py-5">
 
-    <div className="mb-5" dangerouslySetInnerHTML={{ __html: srcIconSvg }} />
+    <div className="svg-display mb-5" dangerouslySetInnerHTML={{ __html: srcIconSvg }} />
 
-    <button onClick={onCopy} className="btn btn-success fs-14 mb-3 mr-3">
+    <button onClick={onCopy} className="btn btn-dark fs-14 mb-3 mr-3">
       <i className="fa fa-link"></i> COPY
     </button>
 
@@ -92,7 +92,7 @@ export default function Editor () {
       onChange={onChange}
       value={srcIconSvg}
       name="svg-editor"
-      height="180px"
+      height="200px"
       width="100%"
       editorProps={{ $blockScrolling: true }}
       setOptions={{
