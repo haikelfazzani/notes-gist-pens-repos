@@ -23,14 +23,16 @@ body {
 
 header {
   color:#fff;
-  padding:40px;
-  /* background: url(img/2.svg),linear-gradient(270deg,#474649,#7b68ee); */
+  padding:20px;
+  background-image: url(img/dots.svg);
   box-shadow: 0px 5px 20px rgba(80, 79, 85, 0.6);
 }
 
-
+h1 {
+  font-family: 'Righteous', cursive;
+}
 /*****************************/
-.editor{
+.editor, #html-editor, #html-editor>*{
   text-transform: none !important;
 }
 
@@ -42,8 +44,25 @@ header {
   background-image: url(img/dots.svg);
   padding:20px;
 }
-/******************************/
+/******************Animos page ************/
+.animos>div {
+  display:flex
+}
 
+.gutter {
+  background-color: var(--bs-dark);
+  cursor:col-resize;
+}
+
+.gutter:hover {
+  background-color: var(--bs-primary) !important;
+}
+
+iframe {
+  height: 500px;
+}
+
+/******************************/
 .card {
   border: 0;
   box-shadow: var(--light-box-shadow);
@@ -101,6 +120,8 @@ header {
   transition: background-color .25s;
 }
 
+.text-yellow {color:var(--bs-yellow)}
+
 .fs-40 {font-size:40px;}
 .fs-14 {font-size:14px !important;}
 .fs-12 {font-size:12px !important;}
@@ -121,6 +142,16 @@ a {text-decoration: none;}
   background: var(--bs-light);
 }
 
+/***************************************/
+
 @media screen and (max-width: 992px) {
   .w-25 {width: 100% !important;}
+}
+
+
+@media screen and (max-width: 600px) {
+  .disp-none {
+   display:none;
+  }
+  .w-75,.w-50 {width:100% !important;}
 }

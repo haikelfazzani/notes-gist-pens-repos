@@ -39,8 +39,8 @@ export default function Navbar () {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                <i className="fa fa-info-circle"></i> About
+              <Link className="nav-link" to="/animos">
+                <i className="fa fa-info-circle"></i> animos
               </Link>
             </li>
           </ul>
@@ -48,11 +48,7 @@ export default function Navbar () {
           <ul className="navbar-nav">
 
             <li className="nav-item">
-              <Link className="btn btn-light mr-3" to="/editor"><i className="fa fa-cog"></i></Link>
-            </li>
-
-            <li className="nav-item">
-              <span className="btn btn-light" onClick={onOpenDrawer}>
+              <span className="nav-link" onClick={onOpenDrawer}>
                 <i className="fas fa-cart-arrow-down"></i> ({globalState.listSelectedIcons.length})
               </span>
             </li>

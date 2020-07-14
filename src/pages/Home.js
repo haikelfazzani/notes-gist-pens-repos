@@ -48,26 +48,26 @@ function Home () {
 
   return (<div>
 
-    <header className="bg-dark text-left">
+    <header className="bg-dark">
       <div className="container">
-        <div className="d-flex align-items-center">
-        <div className="w-75">
-          <h1><i className="fa fa-info-circle"></i> svg icons for</h1>
-          <h1>frameworks and languages</h1>
-          <p className="mt-0">Free and open source</p>
+        <div className="d-flex flex-column align-items-center">
 
-          <form onSubmit={onSearchIcon} className="d-flex w-50">
+          <h1>FREE svg icons and<br /> css animations</h1>
+          <p className="mt-0">
+            <i className="fab fa-angular text-danger mr-3"></i>
+            <i className="fab fa-react text-info mr-3"></i>
+            <i className="fab fa-vuejs text-success mr-3"></i>
+            <i className="fab fa-js text-yellow"></i>
+          </p>
+
+          <form onSubmit={onSearchIcon}>
             <input
               type="search"
-              className="form-control mr-3"
+              className="form-control"
               placeholder="react.."
             />
-
-            <button type="submit" className="btn btn-primary"><i className="fa fa-search"></i></button>
           </form>
-        </div>
 
-        <img src={headImg} alt="incofy" className="w-25" />
         </div>
       </div>
     </header>

@@ -1,9 +1,10 @@
 # INCOFY
-FREE AND OPEN SOURCE SVG ICONS FOR FRAMEWORKS AND LANGUAGES
+FREE AND OPEN SOURCE SVG ICONS AND CSS ANIMATIONS
 
 - [x] Collections of svg icons : frameworks - languages - tools
 - [x] Convert svg to png/jpg (using canvas)
 - [x] Svg editor
+- [x] HTML editor
 
 # Notes
 - All icons are placed in "public" folder.
@@ -20,6 +21,10 @@ FREE AND OPEN SOURCE SVG ICONS FOR FRAMEWORKS AND LANGUAGES
 - Bootstrap/FontAwesome
 - Canvas API
 - Ace editor
+
+### Todo
+- [ ] timeline
+- [ ] save snippet
 
 ### License
 MIT
